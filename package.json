@@ -1,0 +1,73 @@
+{
+  "name": "@resonia/webhook-ingester",
+  "version": "0.1.0",
+  "description": "Store VeilMail webhook events in your database",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "bin": {
+    "veilmail-ingester": "./dist/cli.js"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch",
+    "typecheck": "tsc --noEmit",
+    "clean": "rm -rf dist"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.7.0",
+    "@types/node": "^22.0.0"
+  },
+  "peerDependencies": {
+    "pg": "^8.0.0",
+    "mysql2": "^3.0.0",
+    "better-sqlite3": "^11.0.0"
+  },
+  "peerDependenciesMeta": {
+    "pg": {
+      "optional": true
+    },
+    "mysql2": {
+      "optional": true
+    },
+    "better-sqlite3": {
+      "optional": true
+    }
+  },
+  "keywords": [
+    "veilmail",
+    "webhook",
+    "ingester",
+    "email",
+    "events",
+    "database",
+    "postgres",
+    "mysql",
+    "sqlite"
+  ],
+  "author": "Resonia Inc",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/resonia/veil-mail"
+  },
+  "homepage": "https://veilmail.xyz/docs/webhooks",
+  "bugs": {
+    "url": "https://github.com/resonia/veil-mail/issues"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
