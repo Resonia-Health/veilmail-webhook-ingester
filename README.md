@@ -1,6 +1,10 @@
 # @resonia/webhook-ingester
 
-Store VeilMail webhook events in your database. A standalone, zero-dependency package that receives webhook events from VeilMail and persists them to PostgreSQL, MySQL, or SQLite.
+Store VeilMail webhook events in your database. A standalone, zero-dependency package that receives webhook events from [Veil Mail](https://veilmail.xyz) and persists them to PostgreSQL, MySQL, or SQLite.
+
+> **Drop-in webhook event storage for Veil Mail — open source, self-hostable, zero runtime dependencies.** Use it as a standalone HTTP server via `npx` or integrate programmatically as a library. Handles HMAC-SHA256 signature verification, idempotent upserts on `event_id`, and ships with PostgreSQL, MySQL, and SQLite adapters out of the box.
+>
+> **Related:** [Veil Mail webhooks docs](https://veilmail.xyz/docs/webhooks) · [Veil Mail Node.js SDK](https://github.com/Resonia-Health/veilmail-node) · [Event types reference](https://veilmail.xyz/docs/webhooks)
 
 ## Features
 
